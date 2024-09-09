@@ -1,0 +1,254 @@
+<!-- dichvu.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>Dịch vụ thuê xe giá rẻ tại Đà Lạt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            align-items: flex-start;
+        }
+        .header {
+    background: #333;
+    padding: 1px 0;
+    width:100%;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.header .nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.header .nav ul li {
+    padding:15px;
+    border-right: 1px solid white;
+    margin-left: 20px;
+}
+
+.header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+    color: #f0c040;
+}
+.top> a{
+    position: fixed;
+    right:3% ;
+    bottom: 3%;
+    width: 30px;
+    height: 30px;
+    font-size: 100%;
+    text-align: center;
+    z-index: 1000;
+    border: 1px solid black;  
+    color: #e70e65;
+    text-decoration: none; 
+}
+
+.top > a:hover{
+    color: #ffffff;
+    background-color: black;
+}
+
+        h1 {
+            color:black;
+            background-color:aqua;
+            text-align: center;
+            width:100%;
+
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+            gap: 5px; 
+            display: grid;
+            width: 100%;
+            padding:0;
+
+        }
+        .product {
+            position: relative;
+            background-color: #fff; 
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: left;
+            transition: transform 0.2s;
+            box-sizing:border-box;
+            width:700px;
+            height:750px;
+            margin-bottom: 0;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .product p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .sale {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: green;
+            color: black;
+            padding: 5px;
+            font-size: 12px;
+            border-radius: 5px;
+            animation: flash 1s infinite;
+        }
+        @keyframes flash {
+            0% { background-color: rgb(126, 226, 126); }
+            33% { background-color: rgb(223, 223, 125); }
+            66% { background-color: rgb(171, 97, 171); }
+            100% { background-color: rgb(202, 90, 107); }
+        }
+
+        .footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 20px 0; 
+    text-align: center; 
+    width:100%;
+    margin-top:20px;
+}
+
+.footer .contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0; /* Xóa khoảng cách mặc định xung quanh đoạn văn */
+    font-size: 1rem;
+}
+
+.footer .social-icons {
+    margin-top: 10px; /* Khoảng cách giữa đoạn văn và biểu tượng mạng xã hội */
+}
+
+.footer .social-icons a {
+    color: #fff; 
+    margin: 0 10px; /*khoảng cách biểu tưởng*/
+    font-size: 1.5rem; /* Kích thước biểu tượng */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
+}
+
+.fb:hover{
+    color: #1875f7;
+}
+.tw:hover{
+    color: #41b3ff;
+}
+a.ig > i:hover{
+    background-image: linear-gradient(#9d0d9d, #ff006a, orange,yellow);
+}
+
+    </style>
+    <script>
+       function askToBuy(productName) {
+            const days = prompt(`Bạn muốn đặt xe bao nhiêu ngày? (${productName})`);
+            if (days) {
+                alert(`Cảm ơn bạn đã đặt xe ${productName} trong ${days} ngày.`);
+            } else {
+                alert("Vui lòng nhập số ngày bạn muốn thuê xe.");
+            }
+        }
+    </script>
+</head>
+    <header class="header" id="top">
+        <div class="container">
+            <div class="logo">Homestay Tại Đà Lạt</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="datphong.html">Đặt Phòng</a></li>
+                    <li><a href="lienhe.html">Hỗ Trợ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<body style="background-image:url(image/otonen.jpg)">
+    <h1>Trang dịch vụ cho thuê xe hơi giá rẻ tại Đà Lạt</h1>
+    <div class="container" id="top">
+        <div class="product" onclick="askToBuy('Toyota Camry')">
+            <span class="sale">Sale 27%</span>
+            <img src="image/Dat xe 1.jpg" alt="iPhone 6">
+            <h3>Toyota Camry</h3>
+            <p>Giá: 1 800 000 VND / 1 ngày</p>
+            <p> Trải nghiệm sự sang trọng và tiện nghi tối ưu với Toyota Camry 2024! Camry 2024 nổi bật với thiết kế hiện đại và thanh lịch, mang đến sự êm ái và thoải mái trong từng chuyến đi. Nội thất rộng rãi và tinh tế với chất liệu cao cấp cùng các tính năng công nghệ tiên tiến như hệ thống giải trí đa phương tiện và các công nghệ an toàn chủ động, giúp bạn yên tâm và tận hưởng hành trình. Động cơ mạnh mẽ và hiệu suất tiết kiệm nhiên liệu vượt trội của Camry 2024 sẽ làm bạn hài lòng ngay từ lần đầu trải nghiệm. Hãy đến và cảm nhận sự khác biệt với Camry 2024!
+
+               </p>
+        </div>
+        <div class="top">
+            <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+        <div class="product" onclick="askToBuy('Civic')">
+            <span class="sale">Sale 25%</span>
+            <img src="image/xe 2.jpg" alt="Civic">
+            <h3>Civic</h3>
+            <p>Giá: 1 600 000 VND/ 1 ngày</p>
+            <p>Được thiết kế để mang lại sự kết hợp hoàn hảo giữa phong cách và hiệu suất, những dòng xe này cung cấp một cabin hiện đại, trang bị tiện nghi và khả năng xử lý tuyệt vời. Dù là di chuyển trong đô thị hay trên các tuyến đường dài, Civic luôn sẵn sàng đáp ứng nhu cầu của bạn với mức tiêu thụ nhiên liệu ấn tượng.</p>
+        </div>
+        <div class="product" onclick="askToBuy('Mustang')">
+            <span class="sale">Sale 10%</span>
+            <img src="image/xe 3.jpg" alt="Mustang">
+            <h3>Mustang</h3>
+            <p>Giá: 815 000 VND/ 1 ngày</p>
+            <p>Được thiết kế với động cơ mạnh mẽ và hệ thống treo thể thao, mang lại trải nghiệm lái xe đầy cảm xúc và phấn khích. Nội thất của Mustang 2024 không chỉ sang trọng mà còn được trang bị các công nghệ tiên tiến như hệ thống giải trí và điều khiển bằng giọng nói. Với thiết kế nổi bật và khả năng vận hành mạnh mẽ, Mustang 2024 là lựa chọn hoàn hảo cho những ai yêu thích tốc độ và sự độc đáo. Đem lại sự hài lòng trong từng chuyến đi với những dòng xe này</p>
+        </div>
+        <div class="product" onclick="askToBuy('Mazda')">
+            <span class="sale">Sale 25%</span>
+            <img src="image/xe42.jpg" alt="Mazda">
+            <h3>Mazda</h3>
+            <p>Giá: 900 000 VND/ 1 ngày</p>
+            <p>Trải nghiệm sự kết hợp hoàn hảo giữa sự sang trọng và hiệu suất vượt trội với Mazda CX-5 2024! CX-5 2024 nổi bật với thiết kế tinh tế và nội thất sang trọng, mang đến sự thoải mái tối đa cho hành khách. Các tính năng an toàn tiên tiến và hệ thống dẫn động AWD giúp bạn tự tin di chuyển trong mọi điều kiện thời tiết. Hệ thống giải trí đa phương tiện và các công nghệ hỗ trợ lái xe hiện đại của CX-5 2024 sẽ làm cho mỗi chuyến đi trở nên thú vị và an toàn. Khám phá Mazda CX-5 2024 để tận hưởng sự hoàn hảo trong từng chi tiết!</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="contain">
+            <p> Best Homestay Đà Lạt, Trải Nghiệm, Tận Hưởng, Thăng Hoa.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/nhi.kt.98"><i class="fb fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_kt.nhi_?igsh=bXdyY3lhenVoNTc3" class="ig"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="tw fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
